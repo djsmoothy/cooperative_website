@@ -1,0 +1,22 @@
+.accordian-root-card-header {
+  background-color: #31326c;
+  color: #fff;
+}
+
+.title-grid {
+  display: grid;
+  grid-template-columns: 30fr 1fr;
+}
+
+.title-grid .icon {
+  justify-self: end;
+  cursor: pointer;
+}
+
+.outer-image {
+  height: 40px;
+}
+
+.inner-image {
+  height: 20px;
+}
