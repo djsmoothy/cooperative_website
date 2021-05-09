@@ -16,13 +16,14 @@ const Navbar = () => {
       <section className='navbar-section'>
         <div className='nav-container'>
           <div className='navbar-content'>
-            <img
-              src='./img/navbar/Parapay.svg'
-              alt=''
-              width='150'
-              height='50'
-              className='logo'
-            />
+            <Link to='/home' className='logo'>
+              <img
+                src='/img/navbar/header-logo.png'
+                alt=''
+                width='158'
+                height='38.81'
+              />
+            </Link>
 
             <div
               onClick={handleToggle}
@@ -46,6 +47,15 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
+                  to='/agency'
+                  className='nav-links'
+                  activeClassName='active'
+                >
+                  Agency Banking
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to='/about'
                   className='nav-links'
                   activeClassName='active'
@@ -53,11 +63,7 @@ const Navbar = () => {
                   About
                 </NavLink>
               </li>
-              <li>
-                <a href='' className='nav-links'>
-                  Agency Banking
-                </a>
-              </li>
+
               <li>
                 <NavLink
                   to='/contact'

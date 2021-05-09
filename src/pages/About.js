@@ -74,42 +74,18 @@ const About = () => {
           <div className='heading'>
             <h1>Our Story</h1>
             <p>
-              At ParaPay, we are building bridges that brings the financially
-              underserved closer and fully included and in accordance with the
-              CBN’s mandate. Business and Individuals in hard-to-reach areas now
-              have access to a wide range of financial access across our various
-              products.
+              ParaPay was born with a clear vision to serve the financially
+              excluded and underserved communities in Nigeria and neighboring
+              African countries.
+            </p>
+            <p>
+              Developed by the team at Canary Tech Limited - a very admirable
+              set of superhumans. ParaPay is the next generation definition of
+              FinTech.
             </p>
           </div>
           <div className='photo-box'>
             <img src='./img/addingwood.png' alt='' className='img-fluid' />
-          </div>
-        </div>
-      </section>
-
-      <section className='vision'>
-        <div className='container vision-content'>
-          <div className='vision-card' data-aos='fade-up'>
-            <h1>Our Vision</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              luctus varius purus sit amet accumsan. Sed mollis ante in sapien
-              vehicula, eu faucibus felis aliquam. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Aliquam luctus varius purus sit amet
-              accumsan. Sed mollis ante in sapien vehicula, eu faucibus felis
-              aliquam.
-            </p>
-          </div>
-          <div className='vision-card' data-aos='fade-up'>
-            <h1>Our Mission</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              luctus varius purus sit amet accumsan. Sed mollis ante in sapien
-              vehicula, eu faucibus felis aliquam. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Aliquam luctus varius purus sit amet
-              accumsan. Sed mollis ante in sapien vehicula, eu faucibus felis
-              aliquam.
-            </p>
           </div>
         </div>
       </section>

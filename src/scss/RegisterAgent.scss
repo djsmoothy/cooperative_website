@@ -1,0 +1,221 @@
+// color schemes
+$primary-color: #31326c;
+$secondary-color: #e5ab3d;
+$light: #fff;
+$gray: #5e5e5e;
+$light-gray: #ababab;
+$dark-gray: #424242;
+$background-gray: #f6f6f6;
+$really-light-gray: #919191;
+$dark: #212529;
+$green: #0daa42;
+$success: #a7eeb6;
+$danger: #f79797;
+$boder-dotted: 2px dotted rgba(49, 50, 108, 0.5);
+$boder-solid: 2px solid rgba(49, 50, 108, 0.5);
+
+.registration-form {
+  margin: 0px 0 200px 0;
+  padding: 50px 0 200px 0;
+  background: $light;
+
+  h1 {
+    font-size: 50px;
+    color: $primary-color;
+    font-weight: 550;
+    width: 20ch;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .progress-circle {
+    img {
+      height: 30px;
+    }
+  }
+
+  .progress-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+  }
+
+  .progress-grid-content {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    p {
+      margin: 0;
+    }
+
+    .text-faded {
+      color: rgba(49, 50, 108, 0.5);
+    }
+    .text-completed {
+      color: $primary-color;
+    }
+  }
+
+  .progress-grid-content-number {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .progress-dotted-line {
+    margin-top: 15px;
+    border: none;
+    border-top: $boder-dotted;
+    width: 100%;
+  }
+
+  .progress-line {
+    margin-top: 15px;
+    border: none;
+    border-top: $boder-solid;
+    width: 100%;
+  }
+
+  .register-form-card {
+    background-color: $primary-color;
+    margin: 30px 0 0 0;
+    padding: 20px 50px;
+
+    h3 {
+      font-weight: 550;
+      font-size: 30px;
+      letter-spacing: 0.02em;
+      color: #e5ab3d;
+    }
+
+    label,
+    p {
+      color: $light;
+    }
+
+    .form-group-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 10px;
+    }
+
+    .form-group-grid {
+      .form-group {
+        margin-top: 30px;
+      }
+    }
+
+    .resend-token {
+      cursor: pointer;
+    }
+
+    .form-loading {
+      background-color: $secondary-color;
+      width: 40%;
+      margin: 30px auto 0px;
+      padding: 7px 0 7px 0;
+      border-radius: 5px;
+    }
+
+    .register-form-btn {
+      width: 40%;
+      background-color: $secondary-color;
+      color: $light;
+      border: none;
+      margin: 30px auto 0px;
+    }
+
+    .register-form-btn-skip {
+      width: 40%;
+      background-color: $primary-color;
+      color: $light;
+      border: none;
+      margin: -10px auto 0px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .registration-form {
+    margin: 0px 0 20px 0;
+    padding: 50px 0 150px 0;
+    background: $light;
+
+    h1 {
+      font-size: 38px;
+      color: $primary-color;
+      font-weight: 550;
+      width: 20ch;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .register-form-card {
+      background-color: $primary-color;
+      margin: 30px 0 0 0;
+      padding: 20px 50px;
+
+      h3 {
+        font-weight: 550;
+        font-size: 25px;
+        letter-spacing: 0.02em;
+        color: #e5ab3d;
+      }
+    }
+  }
+
+  .progress-grid-content-number {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 22px;
+  }
+
+  .text-line-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .registration-form {
+    margin: 0px 0 0px 0;
+    padding: 50px 0 100px 0;
+    background: $light;
+
+    h1 {
+      font-size: 34px;
+      color: $primary-color;
+      font-weight: 550;
+      width: 10ch;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .register-form-card {
+      background-color: $primary-color;
+      margin: 30px 0 0 0;
+      padding: 20px 10px;
+
+      h3 {
+        font-weight: 550;
+        font-size: 22px;
+        letter-spacing: 0.02em;
+        color: #e5ab3d;
+      }
+
+      .form-group-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        margin-top: 0px;
+      }
+    }
+
+    .progress-grid {
+      display: none;
+    }
+  }
+}

@@ -47,7 +47,7 @@ export const Contact = () => {
                         className='img-fluid'
                       />
                     </span>
-                    +234 803 4629369
+                    +234 908 631 3835
                   </p>
                 </div>
                 <div className='mycard-secondary'>
@@ -71,9 +71,8 @@ export const Contact = () => {
                         className='img-fluid'
                       />
                     </span>
-                    3, Isale Remilekun
+                    Brains & Hammers, Apo, Abuja FCT, Nigeria.
                   </p>
-                  <p>street, Ikota</p>
                 </div>
                 <div className='mycard-secondary'>
                   <span>
@@ -161,41 +160,23 @@ export const Contact = () => {
                 Our customer care agents are always available to recieve your
                 calls from Monday to Friday, 8am - 6pm
               </p>
-              <a href='' className='card-btn-secondary'>
-                Call
-              </a>
             </div>
             <div className='mycard-primary' data-aos='fade-up'>
               <img src='./img/icons/chaticon.svg' alt='' />
               <h5>Chat</h5>
               <p>
-                Chat Our customer care agents are always available to chat with
-                you live 24hrs, everyday
+                Our customer care agents are always available to chat with you
+                live 24hrs, everyday
               </p>
-              <a href='' className='card-btn-primary'>
-                Chat
-              </a>
             </div>
 
             <div className='mycard-secondary' data-aos='fade-up'>
               <img src='./img/icons/messageicon.svg' alt='' />
               <h5>Message</h5>
               <p>
-                Message Send us a message on any of our platforms and we’ll get
-                back to you as soon as possible
+                Send us a message on any of our platforms and we’ll get back to
+                you as soon as possible
               </p>
-
-              <div>
-                <span>
-                  <img src='./img/icons/cardfacebook.svg' alt='' />
-                </span>
-                <span>
-                  <img src='./img/icons/cardtwitter.svg' alt='' />
-                </span>
-                <span>
-                  <img src='./img/icons/cardinsta.svg' alt='' />
-                </span>
-              </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,87 @@
+// color schemes
+$primary-color: #31326c;
+$secondary-color: #e5ab3d;
+$light: #fff;
+$gray: #5e5e5e;
+$light-gray: #ababab;
+$dark-gray: #424242;
+$background-gray: #f6f6f6;
+$really-light-gray: #919191;
+
+.download-agency {
+  margin: 0px 0 100px;
+  padding: 100px 0 0 0;
+  background-color: $light;
+  gap: 100px;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .download-text {
+      margin-top: 100px;
+      h5 {
+        color: $primary-color;
+      }
+
+      h1 {
+        color: $primary-color;
+        margin: 40px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .download-agency {
+    margin: 0px 0 40px;
+    padding: 70px 0 100px 0;
+    background-color: $light;
+    gap: 100px;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .download-text {
+        margin-top: 100px;
+        h5 {
+          color: $primary-color;
+        }
+
+        h1 {
+          color: $primary-color;
+          margin: 40px 0;
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .download-agency {
+    margin: 0px 0 0px;
+    padding: 50px 0 50px 0;
+    background-color: $light;
+    gap: 0px;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .download-text {
+        margin-top: 0px;
+        h5 {
+          color: $primary-color;
+          font-size: 20px;
+        }
+
+        h1 {
+          color: $primary-color;
+          margin: 20px 0;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

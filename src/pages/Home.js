@@ -11,27 +11,27 @@ import 'aos/dist/aos.css';
 import Footer from '../Layout/Footer';
 
 const Home = () => {
-  gsap.registerPlugin(TextPlugin);
+  // gsap.registerPlugin(TextPlugin);
   let app = useRef(null);
 
-  let payment = useRef(null);
-  let cursor = useRef(null);
+  // let payment = useRef(null);
+  // let cursor = useRef(null);
 
-  let tl = new TimelineLite();
+  // let tl = new TimelineLite();
 
   useEffect(() => {
     Aos.init({duration: 2000});
 
     TweenMax.to(app, 0, {css: {visibility: 'visible'}});
 
-    TweenMax.to(cursor, 1, {opacity: 0, ease: Power2.inOut, repeat: -1});
+    // TweenMax.to(cursor, 1, {opacity: 0, ease: Power2.inOut, repeat: -1});
 
-    tl.to(payment, {
-      duration: 2,
-      ease: Power3.ease,
-      text: ' Payment',
-      delay: 1.5,
-    });
+    // tl.to(payment, {
+    //   duration: 3,
+    //   ease: Power3.ease,
+    //   text: ' Payment',
+    //   delay: 1.5,
+    // });
   }, [app]);
 
   return (
@@ -56,9 +56,9 @@ const Home = () => {
                 className='img-fluid'
               />
               <h1 data-aos='fade-up'>
-                HashTag
-                <span ref={(el) => (payment = el)}> </span>
-                <span ref={(el) => (cursor = el)}>_</span>
+                HashTag<span> Payment</span>
+                {/* <span ref={(el) => (payment = el)}> </span>
+                <span ref={(el) => (cursor = el)}>_</span> */}
               </h1>
             </div>
 

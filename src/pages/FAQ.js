@@ -38,11 +38,7 @@ const FAQ = () => {
   const [questionLoading, setQuestionLoading] = useState(false);
   const [questionError, setQuestionError] = useState({});
 
-  const [titleIcon, setTitleIcon] = useState({active1: false, active2: false});
-  const {active1, active2} = titleIcon;
-
   const getFaqQuestions = async (key) => {
-    setTitleIcon({...titleIcon, active1: !active1});
     setQuestionLoading(true);
 
     try {
@@ -58,10 +54,6 @@ const FAQ = () => {
 
       setQuestionError(msg);
     }
-  };
-
-  const changeActiveState = () => {
-    setTitleIcon({...titleIcon, active2: !active2});
   };
 
   return (
@@ -109,11 +101,7 @@ const FAQ = () => {
                       <div className='title-grid'>
                         <div>{category.title}</div>
                         <div className='icon'>
-                          {active1 ? (
-                            <i class='fas fa-minus'></i>
-                          ) : (
-                            <i class='fas fa-plus'></i>
-                          )}
+                          <i class='fas fa-chevron-down'></i>
                         </div>
                       </div>
                     </CustomToggle>
@@ -148,16 +136,12 @@ const FAQ = () => {
                         <Card.Body>
                           <Accordion defaultActiveKey='0'>
                             <Card>
-                              <Card.Header onClick={changeActiveState}>
+                              <Card.Header>
                                 <CustomToggle2 eventKey={$question._id}>
                                   <div className='title-grid'>
                                     <div>{$question.question}</div>
                                     <div className='icon'>
-                                      {active2 ? (
-                                        <i class='fas fa-minus'></i>
-                                      ) : (
-                                        <i class='fas fa-plus'></i>
-                                      )}
+                                      <i class='fas fa-chevron-down'></i>
                                     </div>
                                   </div>
                                 </CustomToggle2>
@@ -199,16 +183,16 @@ const FAQ = () => {
               <img src='./img/icons/chaticon.svg' alt='' />
               <h5>Chat</h5>
               <p>
-                Chat Our customer care agents are always available to chat with
-                you live 24hrs, everyday
+                Our customer care agents are always available to chat with you
+                live 24hrs, everyday
               </p>
             </div>
             <div className='mycard-secondary' data-aos='fade-up'>
               <img src='./img/icons/messageicon.svg' alt='' />
               <h5>Message</h5>
               <p>
-                Message Send us a message on any of our platforms and we’ll get
-                back to you as soon as possible
+                Send us a message on any of our platforms and we’ll get back to
+                you as soon as possible
               </p>
             </div>
           </div>
